@@ -82,6 +82,10 @@ function changeDom(data){
     createButton.textContent = "Check recipe"
     createButton.setAttribute("class","btn")
 
+    const createLink = document.createElement('a')
+    createLink.setAttribute('href',`${data.recipes[0].spoonacularSourceUrl}`)
+    createLink.appendChild(createButton)
+
     const createIconContainer = document.createElement('div')
     createIconContainer.setAttribute('class','icon')
     createIconContainer.innerHTML = '<i class="fa-solid fa-chevron-down"></i>'
@@ -100,7 +104,7 @@ function changeDom(data){
 
     createContainer.appendChild(createImage)
     createContainer.appendChild(createText)
-    createContainer.appendChild(createButton)
+    createContainer.appendChild(createLink)
     createContainer.appendChild(createIconContainer)
     createContainer.appendChild(createIconUpContainer)
 

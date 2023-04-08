@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -29,7 +31,6 @@ html{
 }
 
 .btn{
-    margin-top: 20px;
     font-size: 30px;
     background-color: green;
     color: white;
@@ -73,11 +74,9 @@ html{
     display: block;
   }
 .text{
-    position: absolute;
-    color: white;
-    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    color: black;
     font-size: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alkatra', cursive;
 }
 .text-first{
     color:black;
@@ -87,13 +86,13 @@ html{
     transform: translateY(-50%);
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Chivo Mono', monospace;
 }
 
 .icon{
     font-size: 40px;
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     animation: icon infinite ease-in-out 1s;
 }
 
@@ -106,7 +105,7 @@ html{
 .icon-up{
     font-size: 40px;
     position: absolute;
-    top: 40px;
+    top: 20px;
     animation: icon infinite ease-in-out 1s;
 }
 
